@@ -1,16 +1,11 @@
-public class FootballClub extends SportsClub{
-    int trophies;
+public class FootballClub extends SportsClub {
 
-    public FootballClub(String clubName, String sportType,
-                        Athlete athlete, int trophies) {
-        super(clubName, sportType, athlete);
-        this.trophies = trophies;
+    public FootballClub(String name) {
+        super(name);
     }
 
-    void showInfo() {
-        System.out.println("Football Club: " + clubName);
-        System.out.println("Sport type: " + sportType);
-        System.out.println("Trophies: " + trophies);
-        athlete.showInfo();
+    @Override
+    public String toString() {
+        return "FootballClub{" + super.toString() + "}";
     }
 }
